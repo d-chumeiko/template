@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/catalog.css">
+  <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="wrapper">
+
+      <div class="top-line-header">
+        <div class="top-line-header_left">
+          <a class="link-to-start" href="./start.html"><span class="link-to-start_long">Template</span> <span
+              class="link-to-start_short">TL</span></a>
+        </div>
+        <div class="top-line-header_rigth">
+          <a class="link-to-singup" href="#">E-mail sing up</a>
+          <a href="./shopping-bag.html" class="link-to-bag">
+            <span>Bag <span class="count-products-in-bag">(0)</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="bottom-line-header">
+        <nav class="navbar">
+          <a class="navbar_link--toggle" href="#"><img src="./img/icons/icon-menu.png" alt=""></a>
+          <div class="navbar_menu">
+            <a class="navbar_link active-link" href="./catalog.html">Women</a>
+            <a class="navbar_link" href="#">Men</a>
+            <a class="navbar_link" href="#">Handbags</a>
+            <a class="navbar_link" href="#">Accessories</a>
+            <a class="navbar_link" href="#">Sale</a>
+            <a class="navbar_link" href="#">New Arrivals</a>
+            <a class="navbar_link" href="#">Clearance</a>
+            <a class="navbar_link" href="#">Store Locator</a>
+          </div>
+          <span class="navbar_search">
+            <input class="navbar_text-to-search" type="text" placeholder="Style Name" name="search">
+            <button class="navbar_button-search" type="submit"><img src="./img/icons/icon-search.png" alt="search-icon"></button>
+          </span>
+        </nav>
+      </div>
+    </div>
+    <div class="gradient-separator wide-separator"></div>
+  </header>
+
+  <main>
+
+    <section class="catalog">
+      <div class="wrapper">
+
+        <div class="catalog_filter">
+
+          <ul class="filter-list--hidden">
+            <li class="filter-list_item-shorten">Fashion</li>
+            <li class="filter-list_item-shorten">Product type</li>
+            <li class="filter-list_item-shorten">Color</li>
+            <li class="filter-list_item-shorten">Brand</li>
+            <li class="filter-list_item-shorten">Size</li>
+            <li class="filter-list_item-shorten">Price range</li>
+            <li class="close-filter"></li>
+          </ul>
+
+          <ul class="filter-list">
+            <li class="filter-list_item"><h3 class="filter-list_item-heading">Fashion</h3>
+              <span class="filter-list_item--selected"></span>
+              <ul class="filter-list_item-params">
+                <li class="item-params_option">Not selected</li>
+                <li class="item-params_option">Nail the 90s</li>
+                <li class="item-params_option">Casual style</li>
+                <li class="item-params_option">New Look</li>
+                <li class="item-params_option">Sport</li>
+                <li class="item-params_option">Vintage</li>
+                <li class="item-params_option">Classical style</li>
+              </ul>
+            </li>
+            <li class="filter-list_item"><h3 class="filter-list_item-heading">Product type</h3>
+              <span class="filter-list_item--selected"></span>
+              <ul class="filter-list_item-params">
+                <li class="item-params_option">Not selected</li>
+                <li class="item-params_option">Coats & Jackets</li>
+                <li class="item-params_option">Drasses</li>
+                <li class="item-params_option">Jersey Tops</li>
+              </ul>
+            </li>
+            <li class="filter-list_item"><h3 class="filter-list_item-heading">Color</h3>
+              <span class="filter-list_item--selected"></span>
+              <ul class="filter-list_item-params">
+                <li class="item-params_option">Not selected</li>
+                <li class="item-params_option">Black</li>
+                <li class="item-params_option">Blue</li>
+                <li class="item-params_option">Red</li>
+                <li class="item-params_option">Green</li>
+                <li class="item-params_option">Golden</li>
+              </ul>
+            </li>
+            <li class="filter-list_item"><h3 class="filter-list_item-heading">Brand</h3>
+              <span class="filter-list_item--selected"></span>
+              <ul class="filter-list_item-params">
+                <li class="item-params_option">Not selected</li>
+                <li class="item-params_option">Chi Chi London</li>
+                <li class="item-params_option">Antipodium</li>
+                <li class="item-params_option">Adidas</li>
+                <li class="item-params_option">New Balance</li>
+                <li class="item-params_option">River Island</li>
+              </ul>
+            </li>
+            <li class="filter-list_item"><h3 class="filter-list_item-heading">Size</h3>
+              <span class="filter-list_item--selected"></span>
+              <ul class="filter-list_item-params">
+                <li class="item-params_option">Not selected</li>
+                <li class="item-params_option">UK 2</li>
+                <li class="item-params_option">UK 18</li>
+                <li class="item-params_option">UK 18L</li>
+                <li class="item-params_option">UK 20</li>
+                <li class="item-params_option">UK 20L</li>
+                <li class="item-params_option">UK 20S</li>
+                <li class="item-params_option">UK 22S</li>
+                <li class="item-params_option">UK 22</li>
+              </ul>
+            </li>
+            <li class="filter-list_item"><h3 class="filter-list_item-heading">Price range</h3>
+              <span class="filter-list_item--selected"></span>
+              <ul class="filter-list_item-params">
+                <li class="item-params_option">Not selected</li>
+                <li class="item-params_option">to £99</li>
+                <li class="item-params_option">£100-£299</li>
+                <li class="item-params_option">from £300</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="gradient-separator wide-separator"></div>
+
+        <div class="catalog_products">
+
+          <div class="products_list">
+          </div>
+
+          <div class="catalog_btn-show-more">
+            <a href="./catalog.html.html" class="main-btn">Show more</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="catalog_banners">
+
+      <div class="gradient-separator"></div>
+      
+      <div class="wide-wrapper">
+
+        <div class="banners_left-banner">
+          <a class="banners-link" href="#">
+            <div class="banners-link_text">
+              <h4>Adidas Blue</h4>
+                <p>For men</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="banners_middle-banner">
+          <a class="banners-link" href="#">
+            <div class="banners-link_text">
+              <h4>Repair Patches</h4>
+                <p>£ 150.50</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="banners_right-banner">
+          <a class="banners-link" href="#">
+            <div class="banners-link_text">
+              <h4>Sale</h4>
+                <p>-70%</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="gradient-separator"></div>
+  </main>
+  <!-- Main end -->
+
+  <footer>
+    <div class="wrapper">
+      <div class="top-line-footer">
+        <div class="top-line-footer_left">
+
+          <div class="left_block-of-links">
+            <h3 class="left_block-of-links_heading">Quick Links</h3>
+            <div class="left_block-of-links_links">
+              <a href="#" class="left_block-of-links_link">Store Locator</a>
+              <a href="#" class="left_block-of-links_link">Gift cards</a>
+              <a href="#" class="left_block-of-links_link">Size guide</a>
+              <a href="#" class="left_block-of-links_link">About us</a>
+              <a href="#" class="left_block-of-links_link">Support</a>
+            </div>
+          </div>
+
+          <div class="left_block-of-links">
+            <h3 class="left_block-of-links_heading">Customer Care</h3>
+            <div class="left_block-of-links_links">
+              <a href="#" class="left_block-of-links_link">Customer service</a>
+              <a href="#" class="left_block-of-links_link">Track my order</a>
+              <a href="#" class="left_block-of-links_link">Return policy</a>
+              <a href="#" class="left_block-of-links_link">Shipping & delivery</a>
+              <a href="#" class="left_block-of-links_link">Contact us</a>
+              <a href="#" class="left_block-of-links_link">Career</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="top-line-footer_right">
+
+          <div class="right_block-of-links">
+            <h3 class="right_block-of-links_heading">Questions</h3>
+            <a href="https://twitter.com/" class="right_block-of-links_link">Tweet us <b>@template</b></a>
+          </div>
+
+          <div class="right_block-of-links">
+            <h3 class="right_block-of-links_heading">Order by phone</h3>
+            <a href="tel:88004094712" class="right_block-of-links_tel">8-800-409-47-12</a>
+          </div>
+
+          <div class="right_delivery-service">
+            We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+          </div>
+
+          <div class="right_socials-icons">
+            <a href="https://www.facebook.com/"><img src="./img/icons/fb.png" alt="facebook-icon"></a>
+            <a href="https://www.twitter.com/"><img src="./img/icons/twitter-blue-ico.png" alt="twitter-icon"></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="gradient-separator wide-separator"></div>
+
+      <div class="bottom-line-footer_hidden">
+        <span class="site-info-footer_hidden">
+          <a href="#">Legal notice</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Site map</a>
+        </span>
+        <div class="right_socials-icons_hidden">
+          <a href="https://www.facebook.com/"><img src="./img/icons/fb.png" alt="facebook-icon"></a>
+          <a href="https://www.twitter.com/"><img src="./img/icons/twitter-blue-ico.png" alt="twitter-icon"></a>
+        </div>
+      </div>
+
+      <div class="bottom-line-footer">
+        <span class="dates-and-name-footer">© 2010–2015, The Template Group inc.</span>
+        <a href="#" class="share-footer">Share<span class="share-footer_quantity">1 437</span></a>
+        <span class="site-info-footer">
+          <a href="#">Legal notice</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Site map</a>
+        </span>
+      </div>
+    </div>
+
+  </footer>
+  
+  <script src="./data/catalog-data.js"></script>
+  <script src="./dist/common.js"></script>
+  <script src="./dist/catalog.js"></script>
+</body>
+
+</html>
